@@ -1,0 +1,19 @@
+Asset Size will be 32x32
+
+- Player / Alien
+
+- Ground0
+- Ground1
+- Ground2
+
+- Coin Front
+- Coin 45* Left Side
+- Coin Side
+- Coin Back - Copy Front
+- Coin 45* Right Side - Copy 45* Left Side
+
+- Military
+
+- Tractor Beam
+
+- Traps
