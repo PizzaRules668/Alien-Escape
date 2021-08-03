@@ -1,16 +1,15 @@
 #include "Platform/Platform.hpp"
 
 #include "Game/Game.h"
-#include "Game/Tile.h"
+#include "Game/Map.h"
 
 int main()
 {
-	sf::RenderWindow window;
+	sf::RenderWindow window(sf::VideoMode(1280, 720), "Alien Escape", sf::Style::Default); // Windows for rendering to
 
-	Tile tile("content/sfml.png", "sfml", 0);
+	Game game();
 
-	window.create(sf::VideoMode(200.0f, 200.0f), "SFML works!");
-
+	Map map();
 	// Make Event listener
 	sf::Event event;
 
@@ -27,7 +26,9 @@ int main()
 		window.clear();
 
 		// Draw to window
-		window.draw(tile);
+		//map.draw(&window, sf::RenderStates::Default);
+		window.draw(map);
+		//window.draw(game);
 
 		// Update the window
 		window.display();
